@@ -25,7 +25,7 @@
 (require 'go-mode)
 (with-eval-after-load "eglot"
 	(progn
-		(add-to-list 'eglot-server-programs '(go-mode . ("gopls" "-rpc.trace" "-logfile=/usr/local/google/home/bcmills/tmp/gopls.log")))
+		(add-to-list 'eglot-server-programs '(go-mode . ("gopls" "-rpc.trace" "-logfile=/tmp/gopls.log")))
 		(defun eglot-interactively-organize-imports ()
 			(call-interactively 'eglot-code-action-organize-imports))
 		(defun eglot-install-save-hook ()
